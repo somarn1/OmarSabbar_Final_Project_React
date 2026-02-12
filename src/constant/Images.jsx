@@ -93,7 +93,7 @@ const Shopys = {shopi,shopi2,shopi3,shopi4,shopi5,shopi6,shop7,shopi8}
 
 const Gallerys = {Gallery13,Gallery15,Gallery3,Gallery7,Gallery9}
 
-const Items = [Item2,Item3,Item5,Item7]
+const Items = {Item2,Item3,Item5,Item7}
 
 const ItemsCarts = {ItemCart1,ItemCart2,ItemCart3}
 

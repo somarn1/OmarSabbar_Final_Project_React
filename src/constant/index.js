@@ -18,5 +18,5 @@ import { ImgPng } from "./Images";
 
 
 
-export const images = {Brn , Blogs , Cards , Carousels , Shopys , Gallerys , Items , Items , ItemsCarts , ImgVideo , ImgLogo , ImgDiscover , 
+export const images = {Brn , Blogs , Cards , Carousels , Shopys , Gallerys , Items , ItemsCarts , ImgVideo , ImgLogo , ImgDiscover , 
 ImgExpress , ImgMasterCard , ImgPaypal , ImgVisa , ImgPng}
