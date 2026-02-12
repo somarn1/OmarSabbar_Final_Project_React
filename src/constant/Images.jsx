@@ -21,7 +21,7 @@ import Cards6 from '../assets/Images/cards6.webp'
 
 
 import Carousel1 from '../assets/Images/carousel1.jpg'
-import Carouse2 from '../assets/Images/carousel2.jpg'
+import Carousel2 from '../assets/Images/carousel2.jpg'
 import Carousel3 from '../assets/Images/carousel3.webp'
 
 
@@ -87,7 +87,7 @@ const Blogs = {Blog1,Blog2,Blog3}
 
 const Cards = {Cards1,Cards2,Cards3,Cards4,Cards5,Cards6}
 
-const Carousels = {Carousel1,Carouse2,Carousel3}
+const Carousels = {Carousel1,Carousel2,Carousel3}
 
 const Shopys = {shopi,shopi2,shopi3,shopi4,shopi5,shopi6,shop7,shopi8}
 
