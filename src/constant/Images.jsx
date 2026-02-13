@@ -91,6 +91,8 @@ const Carousels = {Carousel1,Carousel2,Carousel3}
 
 const Shopys = {shopi,shopi2,shopi3,shopi4,shopi5,shopi6,shop7,shopi8}
 
+const Shopyss = [shopi,shopi2,shopi3,shopi4,shopi5,shopi6,shop7,shopi8]
+
 const Gallerys = {Gallery13,Gallery15,Gallery3,Gallery7,Gallery9}
 
 const Items = {Item2,Item3,Item5,Item7}
@@ -113,5 +115,5 @@ const ImgVisa = {Visa}
 
 const ImgPng = {ImapgePng}
 
-export {Brn , Blogs , Cards , Carousels , Shopys , Gallerys , Items , ItemsCarts , ImgVideo , ImgLogo , ImgDiscover , ImgExpress , ImgMasterCard , ImgPaypal , ImgVisa , ImgPng}
+export {Brn , Blogs , Cards , Carousels , Shopys , Gallerys , Items , ItemsCarts , ImgVideo , ImgLogo , ImgDiscover , ImgExpress , ImgMasterCard , ImgPaypal , ImgVisa , ImgPng, Shopyss}
 

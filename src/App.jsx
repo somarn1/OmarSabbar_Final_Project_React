@@ -8,6 +8,7 @@ import Contact from "./Pages/Contact"
 import NavBar from "./Components/NavBar"
 import Footer from "./Components/Footer"
 import Features from "./Pages/Features"
+import DetailsBlogs from "./Pages/DetailsBlogs"
 
 
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="/Contact" element={<Contact />} />
         <Route path="/NavBar" element={<NavBar />} />
         <Route path="Footer" element={<Footer />} />
+        <Route path="/Details/:id" element={<DetailsBlogs />} />
       </Routes>
     </>
   )

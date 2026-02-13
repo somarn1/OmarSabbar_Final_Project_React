@@ -165,9 +165,10 @@ function Home() {
             <div className="absolute inset-0  group-hover:bg-opacity-10 transition-all duration-300" />
             <div className="absolute bottom-0 left-0 right-0 flex justify-center pb-8">
               <div className="bg-white px-8 py-3 group-hover:bg-orange-500 transition-colors duration-300">
-                <span className="text-sm font-semibold tracking-wider group-hover:text-white transition-colors duration-300">
+                <Link to={'/Shop'}><span className="text-sm font-semibold tracking-wider group-hover:text-white transition-colors duration-300">
                   DRESSES
-                </span>
+                </span></Link>
+
               </div>
             </div>
           </div>
@@ -182,25 +183,25 @@ function Home() {
               <div className="absolute inset-0 group-hover:bg-opacity-10 transition-all duration-300" />
               <div className="absolute bottom-0 left-0 right-0 flex justify-center pb-8">
                 <div className="bg-white px-8 py-3 group-hover:bg-orange-500 transition-colors duration-300">
-                  <span className="text-sm font-semibold tracking-wider group-hover:text-white transition-colors duration-300">
+                  <Link to={'/Shop'}><span className="text-sm font-semibold tracking-wider group-hover:text-white transition-colors duration-300">
                     WATCHES
-                  </span>
+                  </span></Link>
                 </div>
               </div>
             </div>
 
-            <div className="flex-1 group relative overflow-hidden cursor-pointer ">
+            <div className="flex-1 h-full group relative overflow-hidden cursor-pointer ">
               <img
                 src={images.Blogs.Blog1}
                 alt="FOOTWEAR"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
-              <div className="absolute inset-0 group-hover:bg-opacity-10 transition-all duration-300" />
+              <div className="absolute h-full inset-0 group-hover:bg-opacity-10 transition-all duration-300" />
               <div className="absolute bottom-0 left-0 right-0 flex justify-center pb-8">
                 <div className="bg-white px-8 py-3 group-hover:bg-orange-500 transition-colors duration-300">
-                  <span className="text-sm font-semibold tracking-wider group-hover:text-white transition-colors duration-300">
+                  <Link to={'/Shop'}><span className="text-sm font-semibold tracking-wider group-hover:text-white transition-colors duration-300">
                     FOOTWEAR
-                  </span>
+                  </span></Link>
                 </div>
               </div>
             </div>
@@ -215,9 +216,9 @@ function Home() {
             <div className="absolute inset-0  group-hover:bg-opacity-10 transition-all duration-300" />
             <div className="absolute bottom-0 left-0 right-0 flex justify-center pb-8">
               <div className="bg-white px-8 py-3 group-hover:bg-orange-500 transition-colors duration-300">
-                <span className="text-sm font-semibold tracking-wider group-hover:text-white transition-colors duration-300">
+                <Link to={'/Shop'}><span className="text-sm font-semibold tracking-wider group-hover:text-white transition-colors duration-300">
                   BAGS
-                </span>
+                </span></Link>
               </div>
             </div>
           </div>
@@ -233,9 +234,9 @@ function Home() {
             <div className="absolute inset-0  group-hover:bg-opacity-10 transition-all duration-300" />
             <div className="absolute bottom-0 left-0 right-0 flex justify-center pb-8">
               <div className="bg-white px-8 py-3 group-hover:bg-orange-500 transition-colors duration-300">
-                <span className="text-sm font-semibold tracking-wider group-hover:text-white transition-colors duration-300">
+                <Link to={'/Shop'}><span className="text-sm font-semibold tracking-wider group-hover:text-white transition-colors duration-300">
                   SUNGLASSES
-                </span>
+                </span></Link>
               </div>
             </div>
           </div>
@@ -251,9 +252,9 @@ function Home() {
             <div className="absolute inset-0  group-hover:bg-opacity-10 transition-all duration-300" />
             <div className="absolute bottom-0 left-0 right-0 flex justify-center pb-8">
               <div className="bg-white px-8 py-3 group-hover:bg-orange-500 transition-colors duration-300">
-                <span className="text-sm font-semibold tracking-wider group-hover:text-white transition-colors duration-300">
+                <Link to={'/Shop'}><span className="text-sm font-semibold tracking-wider group-hover:text-white transition-colors duration-300">
                   ACCESSORIES
-                </span>
+                </span></Link>
               </div>
             </div>
           </div>

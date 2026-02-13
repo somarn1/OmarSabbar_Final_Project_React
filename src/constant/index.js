@@ -1,5 +1,5 @@
 
-import { Brn } from "./Images";
+import { Brn, Shopyss } from "./Images";
 import { Blogs } from "./Images";
 import { Cards } from "./Images";
 import { Carousels } from "./Images";
@@ -18,5 +18,6 @@ import { ImgPng } from "./Images";
 
 
 
+
 export const images = {Brn , Blogs , Cards , Carousels , Shopys , Gallerys , Items , ItemsCarts , ImgVideo , ImgLogo , ImgDiscover , 
-ImgExpress , ImgMasterCard , ImgPaypal , ImgVisa , ImgPng}
+ImgExpress , ImgMasterCard , ImgPaypal , ImgVisa , ImgPng, Shopyss}
