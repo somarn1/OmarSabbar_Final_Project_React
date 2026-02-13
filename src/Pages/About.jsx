@@ -1,4 +1,3 @@
-import React from 'react';
 import { images } from '../constant';
 import NavBar from '../Components/NavBar';
 import Footer from '../Components/Footer';

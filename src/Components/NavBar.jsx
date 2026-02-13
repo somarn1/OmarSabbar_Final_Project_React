@@ -4,6 +4,7 @@ import { FaPinterest } from "react-icons/fa";
 import { FaGooglePlusG } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { images } from "../constant";
+import { Link } from "react-router-dom";
 
 
 import { FaRegUserCircle } from "react-icons/fa";
@@ -53,13 +54,13 @@ function NavBar(props) {
 
 
                   <div className=" flex gap-3 ">
-                    <a className="hover:text-orange-400 " href="">Home</a>
-                    <a className="hover:text-orange-400 "href="">Shop</a>
-                    <a className="hover:text-orange-400 "href="">Sale</a>
-                    <a className="hover:text-orange-400 "href="">Features</a>
-                    <a className="hover:text-orange-400 "href="">Blog</a>
-                    <a className="hover:text-orange-400 "href="">About</a>
-                    <a className="hover:text-orange-400 "href="">Contact</a>
+                    <Link to={"/"}><a className="hover:text-orange-400 " href="">Home</a></Link>
+                    <Link to={"/Shop"}><a className="hover:text-orange-400 "href="">Shop</a></Link>
+                    <Link to={'/Sale'}><a className="hover:text-orange-400 "href="">Sale</a></Link>
+                    <Link to={'/Features'}><a className="hover:text-orange-400 "href="">Features</a></Link>
+                    <Link to={'/Blog'}><a className="hover:text-orange-400 "href="">Blog</a></Link>
+                    <Link to={'/About'}><a className="hover:text-orange-400 "href="">About</a></Link>
+                    <Link to={'/Contact'}><a className="hover:text-orange-400 "href="">Contact</a></Link>
                   </div>
 
 

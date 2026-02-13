@@ -4,10 +4,11 @@ import About from "./Pages/About"
 import Home from "./Pages/Home"
 import Shop from "./Pages/Shop"
 import Sale from "./Pages/Sale"
-import { Feature } from "framer-motion"
 import Contact from "./Pages/Contact"
 import NavBar from "./Components/NavBar"
 import Footer from "./Components/Footer"
+import Features from "./Pages/Features"
+
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
         <Route path='/Blog' element={<Blog />} />
         <Route path="/Shop" element={<Shop />} />
         <Route path="/Sale" element={<Sale />} />
-        <Route path="/Features" element={<Feature />} />
+        <Route path="/FeatureS" element={<Features />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/NavBar" element={<NavBar />} />
         <Route path="Footer" element={<Footer />} />

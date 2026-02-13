@@ -3,6 +3,8 @@ import NavBar from "../Components/NavBar";
 import Footer from "../Components/Footer";
 import { images } from "../constant";
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function Home() {
   const carouselImages = [
@@ -26,48 +28,77 @@ function Home() {
     );
   };
 
+  const animation = {
+    initial: { backgroundSize: "100% 100%" },
+    animate: { backgroundSize: "100% 100%" },
+    whileHover: { backgroundSize: "110% 110%" },
+    transition: { duration: 0.4, ease: "easeOut" }
+  };
+
+  const blog1 = {
+    backgroundImage: `url(${images.Blogs.Blog1})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat"
+  }
+
+  const blog2 = {
+    backgroundImage: `url(${images.Blogs.Blog2})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat"
+  }
+
+  const blog3 = {
+    backgroundImage: `url(${images.Blogs.Blog3})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat"
+  }
+
+
   const products = [
     {
       name: 'Boxy3 T-Shirt with Roll Sleeve',
       price: 20.00,
       oldPrice: 30.00,
-      image: images.Gallerys.Gallery13, 
+      image: images.Gallerys.Gallery13,
       badge: 'Sale'
     },
     {
       name: 'Boxy2 T-Shirt with Roll Sleeve',
       price: 20.00,
-      image: images.Gallerys.Gallery15, 
+      image: images.Gallerys.Gallery15,
     },
     {
       name: 'Boxy1 T-Shirt with Roll Sleeve',
       price: 20.00,
-      image: images.Gallerys.Gallery3, 
+      image: images.Gallerys.Gallery3,
     },
     {
       name: 'Boxy T-Shirt with Roll Sleeve Detail',
       price: 20.00,
-      image: images.Gallerys.Gallery7, 
+      image: images.Gallerys.Gallery7,
     },
     {
       name: 'Classic White Tee',
       price: 20.00,
-      image: images.Gallerys.Gallery9, 
+      image: images.Gallerys.Gallery9,
     },
     {
       name: 'Denim Jacket',
       price: 20.00,
-      image: images.Carousels.Carousel1, 
+      image: images.Carousels.Carousel1,
     },
     {
       name: 'Casual Cotton Dress',
       price: 20.00,
-      image: images.Carousels.Carousel2, 
+      image: images.Carousels.Carousel2,
     },
     {
       name: 'Summer Floral Top',
       price: 20.00,
-      image: images.Carousels.Carousel3, 
+      image: images.Carousels.Carousel3,
     }
   ];
 
@@ -96,9 +127,8 @@ function Home() {
           {carouselImages.map((img, index) => (
             <div
               key={index}
-              className={`absolute w-full h-full transition-opacity duration-700 ${
-                index === currentIndex ? "opacity-100" : "opacity-0"
-              }`}
+              className={`absolute w-full h-full transition-opacity duration-700 ${index === currentIndex ? "opacity-100" : "opacity-0"
+                }`}
             >
               <img
                 src={img}
@@ -159,7 +189,7 @@ function Home() {
               </div>
             </div>
 
-            <div className="flex-1 group relative overflow-hidden cursor-pointer">
+            <div className="flex-1 group relative overflow-hidden cursor-pointer ">
               <img
                 src={images.Blogs.Blog1}
                 alt="FOOTWEAR"
@@ -251,7 +281,7 @@ function Home() {
                     alt={product.name}
                     className="w-full h-80 object-cover transition-all duration-500 group-hover:opacity-90"
                   />
-                  
+
                   {product.badge && (
                     <div className="absolute top-4 left-4 bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
                       {product.badge}
@@ -294,13 +324,69 @@ function Home() {
             <button
               key={index}
               onClick={() => setProductIndex(index)}
-              className={`h-2 rounded-full transition-all duration-300 ${
-                index === productIndex 
-                  ? 'w-8 bg-orange-500' 
+              className={`h-2 rounded-full transition-all duration-300 ${index === productIndex
+                  ? 'w-8 bg-orange-500'
                   : 'w-2 bg-gray-300 hover:bg-gray-400'
-              }`}
+                }`}
             />
           ))}
+        </div>
+
+      </section>
+
+
+      <section className="flex flex-col items-center gap-y-20 p-10">
+        <h1 className="text-3xl font-bold">Our Blog</h1>
+        <div className="w-full grid grid-cols-3 gap-10  pl-32 pr-32 ">
+          <div className="flex flex-col gap-y-10  h-130  ">
+            <motion.div {...animation} className="h-60" style={{ ...blog1 }}></motion.div>
+            <div className="flex flex-col gap-y-5">
+              <Link><h1 className="text-2xl font-bold hover:text-[#e65540]">Black Friday Guide: Best Sales & Discount Codes</h1></Link>
+              <span>by fashe-theme Admin on Dec 28,2017</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed turpis sed lorem dignissim vulputate nec cursus ante. Nunc sit...</p>
+            </div>
+          </div>
+          <div className="flex flex-col gap-y-10  h-130 ">
+            <motion.div {...animation} className="h-60" style={{ ...blog2 }}></motion.div>
+            <div className="flex flex-col gap-y-5">
+              <Link><h1 className="text-2xl font-bold hover:text-[#e65540]">Black Friday Guide: Best Sales & Discount Codes</h1></Link>
+              <span>by fashe-theme Admin on Dec 28,2017</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed turpis sed lorem dignissim vulputate nec cursus ante. Nunc sit...</p>
+            </div>
+          </div>
+          <div className="flex flex-col gap-y-10  h-130 ">
+            <motion.div {...animation} className="h-60" style={{ ...blog3 }}></motion.div>
+            <div className="flex flex-col gap-y-5">
+              <Link><h1 className="text-2xl font-bold hover:text-[#e65540]">Black Friday Guide: Best Sales & Discount Codes</h1></Link>
+              <span>by fashe-theme Admin on Dec 28,2017</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed turpis sed lorem dignissim vulputate nec cursus ante. Nunc sit...</p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+
+
+
+
+      {/* section6 */}
+      <section className="flex flex-col items-center gap-y-25 p-10">
+        <h1 className="text-4xl font-bold">@ FOLLOW US ON INSTAGRAM</h1>
+        <div className="w-full h-30 flex gap-5">
+          <div className="w-full h-30 flex flex-col justify-center items-center border-r-2">
+            <h3>Free Delivery Worldwide</h3>
+            <p>Mirum est notare quam littera gothica</p>
+          </div>
+          <div className="w-full h-30 flex flex-col justify-center items-center border-r-2 ">
+            <h3>Free Delivery Worldwide</h3>
+            <p>Mirum est notare quam littera gothica</p>
+          </div>
+          <div className="w-full h-30 flex flex-col justify-center items-center ">
+            <h3>Free Delivery Worldwide</h3>
+            <p>Mirum est notare quam littera gothica</p>
+          </div>
+
         </div>
       </section>
 
